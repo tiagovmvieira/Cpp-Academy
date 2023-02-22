@@ -98,7 +98,8 @@ int main(){
     Hulk has Died and Thor is Victorious
     Game Over
     */
-   // seed random generator    
+   
+   // seed random generator
    srand(time(NULL));
    Warrior thor("Thor", 100, 30, 15);
    Warrior hulk("Hulk", 135, 25, 15);
