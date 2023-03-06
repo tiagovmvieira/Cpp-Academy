@@ -40,7 +40,7 @@ void FindPrimesWithThreads(unsigned int start, unsigned int end, unsigned numThr
     unsigned int threadSpread = end / numThreads;
     unsigned int newEnd = start + threadSpread - 1;
     for(unsigned int x = 0; x < numThreads; x++){
-        threadVect.emplace_back(FindPrimes, start, newEnd);
+        threadVect.emplace_back(FindPrimes, start, newEnd);     
         start += threadSpread;
         newEnd+= threadSpread;
     }
