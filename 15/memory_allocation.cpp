@@ -31,5 +31,8 @@ int main(){
     for(int i = 0; i < amtToStore; i++){
         std::cout << pNums[i] << "\n";
     }
+
+    delete pNums;
+    
     return 0;
 }
